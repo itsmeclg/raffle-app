@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your QR Code</title>
+</head>
+<body>
+    <h2>Your Raffle QR Code</h2>
+    <p>Screenshot this QR code and save it to your phone.</p>
+    <img src="{{ url_for('static', filename='qr/' + image_path.split('/')[-1]) }}" alt="QR Code" style="width:300px;">
+    <p>Your number: {{ code_value }}</p>
+</body>
+</html>
