@@ -25,15 +25,6 @@ def admin_login():
 
 
 # ---------------------------
-# Admin Logout (Optional)
-# ---------------------------
-@app.route('/admin-logout')
-def admin_logout():
-    session.pop('admin', None)
-    return redirect(url_for('admin_login'))
-
-
-# ---------------------------
 # Protected Admin Page (Step 3)
 # ---------------------------
 @app.route('/admin')
